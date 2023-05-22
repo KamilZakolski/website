@@ -12,7 +12,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: #333;
-  background-color: #f9f9f9;
+  background-color: #EBEBEB;
   padding: 20px;
 }
 
@@ -22,34 +22,28 @@ header {
 }
 
 .header-image {
-  background-image: url(images/floppy-disk.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 400px;
+  background-color: #389393; /* Set your desired background color */
   position: relative;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .header-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added text-shadow */
+  padding: 20px;
 }
 
 .header-content h1 {
   font-size: 36px;
-  color: #fff;
+  color: #EBEBEB;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added text-shadow */
+  text-shadow: 2px 2px 4px #333;
 }
 
 nav ul {
   list-style: none;
   text-align: center;
   margin-top: 10px;
+  font-weight: bold;
 }
 
 nav ul li {
@@ -61,30 +55,40 @@ nav ul li a {
   display: inline-block;
   text-decoration: none;
   padding: 10px 20px;
-  background-color: #f9d949; /* Button background color */
-  color: #333; /* Button text color */
-  border-radius: 4px; /* Button border radius */
+  background-color: #F5A25D;
+  color: #EBEBEB;
+  border-radius: 4px;
   transition: background-color 0.3s ease;
+  text-shadow: 0 2px 4px #333;
+  box-shadow: 0 2px 4px #333;
+  transition: transform 0.3s ease;
 }
 
 nav ul li a:hover {
-  background-color: #f45050; /* Button background color on hover */
-  color: #fff; /* Button text color on hover */
+  background-color: #FA7F72;
+  color: #EBEBEB;
+  transform: scale(1.1);
 }
 
 main section {
   margin-bottom: 40px;
 }
 
+/* Add border around h2 elements */
 h2 {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: 24px;
   color: #333;
   margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 2px solid #389393;
+  padding-bottom: 10px;
+  margin-top: 20px;
 }
 
 p {
   margin-bottom: 15px;
+  text-align: center;
+  color: #333;
 }
 
 .project {
@@ -93,6 +97,7 @@ p {
 
 .project h3 {
   font-size: 20px;
+  text-align: center;
   margin-bottom: 10px;
 }
 
@@ -111,12 +116,12 @@ p {
   display: inline-block;
   transition: transform 0.3s ease;
   font-size: 32px;
-  color: #3c486b;
-  text-decoration: none; /* Remove underline */
+  color: #389393;
+  text-decoration: none;
 }
 
 .social-links li a:hover {
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 
 footer {
@@ -142,4 +147,21 @@ footer {
 
 .mt-20 {
   margin-top: 20px;
+}
+
+/* Responsive styles */
+
+/* Adjust header image height for smaller screens */
+@media (max-width: 768px) {
+  .header-image {
+    height: 300px;
+  }
+}
+
+/* Make navigation buttons stack vertically on smaller screens */
+@media (max-width: 480px) {
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
 }
