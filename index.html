@@ -9,6 +9,15 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
   <link rel="manifest" href="favicon/site.webmanifest">
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      var startYear = 2019;
+      var currentYear = new Date().getFullYear();
+      var yearsOfWork = currentYear - startYear;
+      var yearsOfWorkElement = document.getElementById('years-of-work');
+      yearsOfWorkElement.textContent = yearsOfWork;
+    });
+  </script>
 </head>
 <body>
   <header class="header-image">
@@ -27,7 +36,7 @@
   <main>
     <section id="about">
       <h2>About Me</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum, neque a sollicitudin pellentesque, massa est pellentesque nisi, eu luctus arcu leo euismod nulla.</p>
+      <p>I've been working in IT for <span id="years-of-work"></span> years.</p>
     </section>
 
     <section id="portfolio">
