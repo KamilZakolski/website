@@ -55,7 +55,7 @@ nav ul li a {
   display: inline-block;
   text-decoration: none;
   padding: 10px 20px;
-  background-color: #F5A25D;
+  background-color: #389393;
   color: #EBEBEB;
   border-radius: 4px;
   transition: background-color 0.3s ease;
@@ -65,7 +65,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #FA7F72;
+  background-color: #F5A25D;
   color: #EBEBEB;
   transform: scale(1.1);
 }
