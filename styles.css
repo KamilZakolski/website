@@ -11,8 +11,9 @@ body {
   font-family: 'Arial', sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  color: #333;
-  background-color: #EBEBEB;
+  color: #FEFFFF;
+  background: linear-gradient(to right, #f5f5f7 10%, #ffffff 10%, #ffffff 90%, #f5f5f7 90%);
+  background-size: 100% 20px;
   padding: 20px;
 }
 
@@ -21,12 +22,13 @@ header {
   margin-bottom: 30px;
 }
 
-.header-image {
-  background-color: #389393; /* Set your desired background color */
+/* .header-image {
+  background-color: #121212;
   position: relative;
   border-radius: 10px;
   overflow: hidden;
-}
+  margin-inline: 10%;
+} */
 
 .header-content {
   padding: 20px;
@@ -34,9 +36,9 @@ header {
 
 .header-content h1 {
   font-size: 40px;
-  color: #EBEBEB;
+  color: #121212;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 4px #333;
+  text-shadow: 2px 2px 4px #c5c5c6;
 }
 
 nav ul {
@@ -52,22 +54,21 @@ nav ul li {
 }
 
 nav ul li a {
+  color: #ffffff;
   display: inline-block;
   text-decoration: none;
   padding: 10px 20px;
-  background-color: #389393;
-  color: #EBEBEB;
+  background-color: #0077ed;
   border-radius: 4px;
   transition: background-color 0.3s ease;
-  text-shadow: 0 2px 4px #333;
-  box-shadow: 0 2px 4px #333;
   transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px #000000;
 }
 
 nav ul li a:hover {
-  background-color: #F5A25D;
-  color: #EBEBEB;
-  transform: scale(1.1);
+  color: #ffffff;
+  background-color: #177de4;
+  transform: scale(1.05);
 }
 
 main section {
@@ -77,12 +78,13 @@ main section {
 /* Add border around h2 elements */
 h2 {
   font-size: 24px;
-  color: #333;
+  color: #121212;
   margin-bottom: 20px;
   text-align: center;
-  border-bottom: 2px solid #389393;
+  border-bottom: 2px solid #6e6e73;
   padding-bottom: 10px;
   margin-top: 20px;
+  margin-inline: 10%;
 }
 
 p {
@@ -91,7 +93,7 @@ p {
   width: 50%;
   margin: auto;
   padding: 10px;
-  color: #333;
+  color: #000000;
 }
 
 .project {
@@ -119,18 +121,18 @@ p {
   display: inline-block;
   transition: transform 0.3s ease;
   font-size: 32px;
-  color: #389393;
+  color: #0077ed;
   text-decoration: none;
 }
 
 .social-links li a:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 footer {
   text-align: center;
   margin-top: 40px;
-  color: #777;
+  color: #6e6e73;
 }
 
 /* Custom classes for positioning and spacing */
